@@ -20,7 +20,7 @@ int main(int argc, char *argv[]){
         printf("¿Que desea realizar el dia de hoy?\n");
         printf("---------------------------------------------\n");
         printf("1. Multiplicar matrices\n");
-        printf("2. Multiplicar matrices\n");
+        printf("2. vectorDinamico\n");
         printf("3. Salir\n");
         printf("---------------------------------------------\n");
         printf("Digite el valor de su elección: ");
