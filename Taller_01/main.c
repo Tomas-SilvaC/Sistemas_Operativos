@@ -36,25 +36,27 @@ int main(int argc, char *argv[]){
                 int N = (int) atoi(argv[1]);
                 printf("Tamaño de matriz: %d \n", N);
                 
-                //crea las matrices, las llena, multiplica, imprime y borra mediante liberar memoria
+                //Crea las matrices, las llena, multiplica, imprime y borra mediante liberar memoria
                 int *mA = (int*) malloc(N*N*sizeof(int));
                 int *mB = (int*) malloc(N*N*sizeof(int));
                 int *mC = (int*) malloc(N*N*sizeof(int));
-        
+        	//Llena las matrices
                 IniMat(mA, mB, N);
+		//Multiplica y guarda en mC
                 MulMat(mA, mB, mC, N);
-        
+
+		//Imprime las matrices
                 ImpMat(mA,N);
                 ImpMat(mB,N);
                 ImpMat(mC,N);
         
-        
+        	//Libera memoria de las matrices
                 free(mA);
                 free(mB);
                 free(mC);
             }
             else{
-                //crea el vectorDinamico, saca del mismo elementos, los imprime y termina
+                //Crea el vectorDinamico, saca del mismo elementos, los imprime y termina
         	    vectorDinamico editor;
                 vectorInicio(&editor);
         	//Añade elementos al vector
@@ -65,9 +67,11 @@ int main(int argc, char *argv[]){
                     printf("%s", (char *) getVector(&editor, i));
         	//Se borra elemento en el vector con indice = 1
                 borrarVector(&editor, 1);
-        	
+        	//Dado que el indice no cumple con los requisitos, no se logra agregar el elemento al vector
                 setVector(&editor, 1, "Buenos");
-        
+
+		//Imprime los elementos de la matriz - siendo solo el elemento 0, dado que el total de los elementos 
+		//en el vector es igual a 1
                 for (int i = 0; i < totalVector(&editor); i++)
                 printf("%s ", (char *) getVector(&editor, i));
             }
