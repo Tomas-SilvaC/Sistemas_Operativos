@@ -1,0 +1,9 @@
+$(CC) = gcc
+Taller1:
+        $(CC) main.c matrices.c vectores.c -o Taller1
+
+Clean:
+        rm *.o Taller1
+
+
+
