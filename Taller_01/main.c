@@ -57,17 +57,16 @@ int main(int argc, char *argv[]){
                 //crea el vectorDinamico, saca del mismo elementos, los imprime y termina
         	    vectorDinamico editor;
                 vectorInicio(&editor);
-        
+        	//Añade elementos al vector
                 addVector(&editor, "Hola");
                 addVector(&editor, "Profesional");
-        
+        	//Se imprimen elementos del vector
                 for (int i = 0; i < totalVector(&editor); i++)
                     printf("%s", (char *) getVector(&editor, i));
-        
+        	//Se borra elemento en el vector con indice = 1
                 borrarVector(&editor, 1);
-        
+        	
                 setVector(&editor, 1, "Buenos");
-        
         
                 for (int i = 0; i < totalVector(&editor); i++)
                 printf("%s ", (char *) getVector(&editor, i));
