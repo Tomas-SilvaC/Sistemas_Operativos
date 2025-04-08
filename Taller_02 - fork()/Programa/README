@@ -1,0 +1,4 @@
+Para compilar y ejecutar el programa seguir los siguientes pasos:
+1. Descargar los archivos en un entorno de ejecución o, preferiblemente, en un panel de comandos linux
+2. Usar el comando "make" para crear un objeto ejecutable con el nombre "taller_procesos"
+3. escribir el siguiente comando: ./taller_procesos 9 archivo01.txt 6 archivo02.txt
