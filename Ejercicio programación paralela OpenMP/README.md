@@ -4,6 +4,6 @@ Este programa funciona como ejercició para comprender el funcionamiento de las 
 ## Compilación:
 Para el ejercicio 1, es necesario comiplar con el comando que se muestra a continuación:
 
-    "gcc OpenMP_01.c -fopenmp"
+    gcc OpenMP_01.c -fopenmp
 
 La aparición de "-fopenmp" en la linea de comando se utiliza para habilitar las funciones respectivas a OpenMP
